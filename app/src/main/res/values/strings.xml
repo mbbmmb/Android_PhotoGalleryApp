@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">PhotoApp</string>
+    <string name="photo_title">Title</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="delete_photo">Delete Photo</string>
+    <string name="show_subtitle">Show Subtitle</string>
+    <string name="hide_subtitle">Hide Subtitle</string>
+    <string name="hint_with_title">...</string>
+    <string name="persons">With: 1$d, 2$s, 3$d, </string>
+    <string name="date_picker_title">Choose date</string>
+
+    <plurals name="subtitle_plural">
+        <item quantity="one">%1$d photo</item>
+        <item quantity="other">%1$d photos</item>
+    </plurals>
+</resources>
