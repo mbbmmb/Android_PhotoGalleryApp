@@ -33,12 +33,10 @@ public class PhotoPagerActivity extends AppCompatActivity
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         setContentView(R.layout.view_pager);
-        UUID photoId = (UUID) getIntent().getSerializableExtra(EXTRA_PHOTO_ID);
         mViewPager = (ViewPager) findViewById(R.id.photo_view_pager);
+        UUID photoId = (UUID) getIntent().getSerializableExtra(EXTRA_PHOTO_ID);
         mPhotos = PhotoLab.get(this).getPhotos();
-
         FragmentManager fm = getSupportFragmentManager();
 
         mViewPager.setAdapter(new FragmentStatePagerAdapter(fm) {
