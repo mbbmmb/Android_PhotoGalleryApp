@@ -16,6 +16,10 @@ import java.util.UUID;
 public class PhotoPagerActivity extends AppCompatActivity
         implements PhotoDetailFragment.Callbacks {
 
+    public static final String EXTRA_PHOTO_ID = "android.b.m.photoapp4.photo_id";
+    private ViewPager mViewPager;
+    private List<Photo> mPhotos;
+
     @Override
     public void onPhotoUpdated(Photo photo) {
     }
@@ -25,10 +29,6 @@ public class PhotoPagerActivity extends AppCompatActivity
         intent.putExtra(EXTRA_PHOTO_ID, photoId);
         return intent;
     }
-
-    public static final String EXTRA_PHOTO_ID = "android.b.m.photoapp4.photo_id";
-    private ViewPager mViewPager;
-    private List<Photo> mPhotos;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
